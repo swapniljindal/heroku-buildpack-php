@@ -331,6 +331,8 @@ cd $BUILD_DIR/$composer_bindir
 ln -s $relbins .
 cd $BUILD_DIR
 
+source $BP_DIR/bin/phalcon
+
 # Update the PATH
 mkdir -p $BUILD_DIR/.profile.d
 cat > $BUILD_DIR/.profile.d/php.sh <<"EOF"
